@@ -3,35 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>eBook Sintomas do TDAH</title>
+  <title>Sintomas do TDAH - eBook</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
       font-family: 'Poppins', sans-serif;
       background: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
       background-size: cover;
+      color: #f4f4f4;
+      padding: 20px;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
-      padding: 20px;
     }
 
     .container {
-      background: rgba(0, 0, 0, 0.85);
+      background-color: rgba(0, 0, 0, 0.85);
+      border-radius: 20px;
+      padding: 30px;
       max-width: 450px;
       width: 100%;
-      border-radius: 20px;
-      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
-      padding: 30px;
       text-align: center;
-      color: #f4f4f4;
+      box-shadow: 0 0 25px rgba(255, 165, 0, 0.3);
+    }
+
+    .top-link {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .top-link a {
+      color: #FFA500;
+      font-weight: bold;
+      text-decoration: underline;
     }
 
     h1 {
@@ -41,31 +52,32 @@
     }
 
     img {
-      max-width: 100%;
-      border-radius: 15px;
+      width: 100%;
+      border-radius: 12px;
       margin: 20px 0;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      box-shadow: 0 0 12px rgba(255,165,0,0.3);
     }
 
     p {
-      font-size: 16px;
-      color: #e2e8f0;
-      margin-bottom: 15px;
+      font-size: 15px;
+      margin-bottom: 12px;
+      line-height: 1.5;
     }
 
     .highlight {
-      font-weight: 600;
       color: #FFA500;
+      font-weight: bold;
     }
 
     .price {
       font-size: 24px;
       color: #FFA500;
-      font-weight: bold;
       margin: 20px 0;
+      font-weight: bold;
     }
 
     .discount, .bonus {
+      background-color: #1a202c;
       padding: 12px;
       border-radius: 10px;
       margin: 10px 0;
@@ -73,48 +85,49 @@
     }
 
     .discount {
-      background-color: #2d3748;
-      color: #fbd38d;
       border: 1px solid #f6ad55;
+      color: #fbd38d;
     }
 
     .bonus {
-      background-color: #1a202c;
-      color: #90cdf4;
       border: 1px solid #63b3ed;
+      color: #90cdf4;
     }
 
     .buy-btn {
       display: inline-block;
-      background: #FFA500;
-      color: black;
-      padding: 14px 30px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 18px;
       margin-top: 20px;
-      transition: background-color 0.3s ease, color 0.3s ease;
+      padding: 14px 30px;
+      background-color: #FFA500;
+      color: #000;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      transition: 0.3s ease;
     }
 
     .buy-btn:hover {
-      background-color: #ff9900;
+      background-color: #ff8800;
       color: #fff;
     }
 
     footer {
+      margin-top: 30px;
       font-size: 13px;
       color: #a0aec0;
-      margin-top: 30px;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <div class="top-link">
+      ❓ <a href="como-comprar.html">Alguma dúvida? Clique aqui para saber como comprar</a>
+    </div>
     <h1>Sintomas do TDAH</h1>
-    <img src="1000023566.png" alt="Capa do eBook Sintomas do TDAH">
+    <img src="1000023566.png" alt="Capa do eBook Sintomas do TDAH" />
     <p>Este eBook é <span class="highlight">autoexplicativo</span>, direto ao ponto e perfeito para quem quer entender de forma simples e objetiva os <strong>sintomas do TDAH</strong>.</p>
-    <p><span class="highlight">Sintoma:</span> Dificuldade de manter o foco em tarefas simples do dia a dia.</p>
+    <p><strong>Sintoma:</strong> Dificuldade de manter o foco em tarefas simples do dia a dia.</p>
     <div class="price">R$ 26,90</div>
     <div class="discount">🎁 Use o CUPOM <strong>TDS120</strong> para ganhar um super desconto!</div>
     <div class="bonus">🚀 Comprando agora, você pode até se destacar no mercado de produtos digitais!</div>
