@@ -1,225 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sintomas do TDAH - eBook</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16956920282"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'AW-16956920282');
-  </script>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-      background-size: cover;
-      color: #f4f4f4;
-      padding: 20px;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .container {
-      background-color: rgba(0, 0, 0, 0.85);
-      border-radius: 20px;
-      padding: 30px;
-      max-width: 700px;
-      width: 100%;
-      text-align: center;
-      box-shadow: 0 0 25px rgba(255, 165, 0, 0.3);
-      overflow-y: auto;
-      max-height: 95vh;
-    }
-
-    .top-link {
-      font-size: 14px;
-      margin-bottom: 15px;
-    }
-
-    .top-link a {
-      color: #FFA500;
-      font-weight: bold;
-      text-decoration: underline;
-    }
-
-    h1 {
-      font-size: 28px;
-      color: #FFA500;
-      margin-bottom: 15px;
-    }
-
-    h2 {
-      font-size: 22px;
-      color: #FFA500;
-      margin: 25px 0 15px;
-      text-align: left;
-    }
-
-    img {
-      width: 100%;
-      border-radius: 12px;
-      margin: 20px 0;
-      box-shadow: 0 0 12px rgba(255,165,0,0.3);
-    }
-
-    p {
-      font-size: 15px;
-      margin-bottom: 12px;
-      line-height: 1.5;
-      text-align: left;
-    }
-
-    .highlight {
-      color: #FFA500;
-      font-weight: bold;
-    }
-
-    .price {
-      font-size: 24px;
-      color: #FFA500;
-      margin: 20px 0;
-      font-weight: bold;
-    }
-
-    .discount, .bonus {
-      background-color: #1a202c;
-      padding: 12px;
-      border-radius: 10px;
-      margin: 10px 0;
-      font-weight: bold;
-    }
-
-    .discount {
-      border: 1px solid #f6ad55;
-      color: #fbd38d;
-    }
-
-    .bonus {
-      border: 1px solid #63b3ed;
-      color: #90cdf4;
-    }
-
-    .buy-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 14px 30px;
-      background-color: #FFA500;
-      color: #000;
-      text-decoration: none;
-      border-radius: 10px;
-      font-size: 18px;
-      font-weight: bold;
-      transition: 0.3s ease;
-    }
-
-    .buy-btn:hover {
-      background-color: #ff8800;
-      color: #fff;
-    }
-
-    footer {
-      margin-top: 30px;
-      font-size: 13px;
-      color: #a0aec0;
-    }
-
-    .benefits {
-      background-color: #1a1a1a;
-      margin-top: 30px;
-      padding: 20px;
-      border-radius: 12px;
-      text-align: left;
-      box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
-    }
-
-    .policy {
-      background-color: #1a1a1a;
-      margin-top: 40px;
-      padding: 20px;
-      border-radius: 12px;
-      text-align: left;
-      box-shadow: 0 0 10px rgba(255, 165, 0, 0.25);
-      font-size: 14px;
-      color: #f4f4f4;
-      max-height: 400px;
-      overflow-y: auto;
-    }
-
-    .policy a {
-      color: #FFA500;
-      text-decoration: underline;
-    }
-
-    .privacy-link {
-      margin-top: 25px;
-      font-size: 14px;
-      text-align: center;
-    }
-
-    .privacy-link a {
-      color: #FFA500;
-      text-decoration: underline;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sintomas do TDAH - eBook</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16956920282"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-16956920282');
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #f4f4f4;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      max-width: 600px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    }
+    .top-link {
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    .top-link a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    img {
+      width: 100%;
+      max-width: 300px;
+      margin: 20px 0;
+    }
+    .highlight {
+      color: #ffd700;
+      font-weight: 600;
+    }
+    .price {
+      font-size: 24px;
+      margin: 20px 0 10px;
+    }
+    .discount,
+    .bonus {
+      margin-bottom: 10px;
+    }
+    .buy-btn {
+      display: inline-block;
+      background: #ffd700;
+      color: #000;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+      text-decoration: none;
+    }
+    .benefits {
+      text-align: left;
+      margin-top: 30px;
+    }
+    .benefits h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+      opacity: 0.6;
+    }
+    .privacy-link {
+      margin-top: 20px;
+    }
+    .privacy-link a {
+      color: #ffd700;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <div class="top-link">
-      ❓ <a href="como-comprar.html">Alguma dúvida? Clique aqui para saber como comprar</a>
-    </div>
-    <h1>Sintomas do TDAH</h1>
-    <img src="1000023566.png" alt="Capa do eBook Sintomas do TDAH" />
-    <p>Este eBook é <span class="highlight">autoexplicativo</span>, direto ao ponto e perfeito para quem quer entender de forma simples e objetiva os <strong>sintomas do TDAH</strong>.</p>
-    <p><strong>Sintoma:</strong> Dificuldade de manter o foco em tarefas simples do dia a dia.</p>
-    <div class="price">R$ 26,90</div>
-    <div class="discount">🎁 Use o CUPOM <strong>TDS120</strong> para ganhar um super desconto!</div>
-    <div class="bonus">🚀 Comprando agora, você pode até se destacar no mercado de produtos digitais!</div>
+  <div class="container">
+    <div class="top-link">
+      ❓ <a href="como-comprar.html">Alguma dúvida? Clique aqui para saber como comprar</a>
+    </div>
+    <h1>Sintomas do TDAH</h1>
+    <img src="1000023566.png" alt="Capa do eBook Sintomas do TDAH" />
+    <p>Este eBook é <span class="highlight">autoexplicativo</span>, direto ao ponto e perfeito para quem quer entender de forma simples e objetiva os <strong>sintomas do TDAH</strong>.</p>
+    <p><strong>Sintoma:</strong> Dificuldade de manter o foco em tarefas simples do dia a dia.</p>
+    <div class="price">R$ 26,90</div>
+    <div class="discount">🎁 Use o CUPOM <strong>TDS120</strong> para ganhar um super desconto!</div>
+    <div class="bonus">🚀 Comprando agora, você pode até se destacar no mercado de produtos digitais!</div>
 
-    <a class="buy-btn" href="https://pay.hotmart.com/Y99928366E" target="_blank" rel="noopener noreferrer">Compre Agora</a>
+    <a class="buy-btn" href="https://pay.hotmart.com/Y99928366E" target="_blank" rel="noopener noreferrer">Compre Agora</a>
 
-    <div class="benefits">
-      <h2>✨ O que este eBook pode resolver:</h2>
-      <p>📌 <strong>Falta de foco constante?</strong><br> Aprenda a identificar padrões de distração e como começar a controlá-los no dia a dia.</p>
-      <p>📌 <strong>Dificuldade para organizar tarefas?</strong><br> Descubra estratégias simples e diretas para melhorar sua produtividade sem precisar de aplicativos complicados.</p>
-      <p>📌 <strong>Esquecimentos frequentes?</strong><br> Entenda como o TDAH afeta sua memória de curto prazo e como você pode treinar seu cérebro para lembrar mais.</p>
-      <p>📌 <strong>Procrastinação que atrapalha sua vida?</strong><br> O eBook mostra como o TDAH influencia sua motivação e como virar esse jogo.</p>
-      <p>📌 <strong>Insegurança sobre o diagnóstico?</strong><br> Você terá clareza sobre os sintomas e saberá quando é hora de buscar ajuda profissional com confiança.</p>
-    </div>
+    <div class="benefits">
+      <h2>✨ O que este eBook pode resolver:</h2>
+      <p>📌 <strong>Falta de foco constante?</strong><br> Aprenda a identificar padrões de distração e como começar a controlá-los no dia a dia.</p>
+      <p>📌 <strong>Dificuldade para organizar tarefas?</strong><br> Descubra estratégias simples e diretas para melhorar sua produtividade sem precisar de aplicativos complicados.</p>
+      <p>📌 <strong>Esquecimentos frequentes?</strong><br> Entenda como o TDAH afeta sua memória de curto prazo e como você pode treinar seu cérebro para lembrar mais.</p>
+      <p>📌 <strong>Procrastinação que atrapalha sua vida?</strong><br> O eBook mostra como o TDAH influencia sua motivação e como virar esse jogo.</p>
+      <p>📌 <strong>Insegurança sobre o diagnóstico?</strong><br> Você terá clareza sobre os sintomas e saberá quando é hora de buscar ajuda profissional com confiança.</p>
+    </div>
 
-    <a class="buy-btn" href="https://pay.hotmart.com/Y99928366E" target="_blank" rel="noopener noreferrer">Compre Agora</a>
+    <a class="buy-btn" href="https://pay.hotmart.com/Y99928366E" target="_blank" rel="noopener noreferrer">Compre Agora</a>
 
-    <div class="privacy-link">
-      <a href="#politica-privacidade">📃 Leia nossa Política de Privacidade</a>
-    </div>
+    <!-- Link para a política de privacidade -->
+    <div class="privacy-link">
+      🔒 <a href="politica-de-privacidade.pdf" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>
+    </div>
 
-    <div id="politica-privacidade" class="policy">
-      <h2>Política de Privacidade</h2>
-      <p><strong>1. Introdução:</strong> Esta Política de Privacidade explica como coletamos, usamos e protegemos os dados dos visitantes e compradores deste site.</p>
-      <p><strong>2. Informações Coletadas:</strong> Coletamos dados como nome, e-mail e informações de compra, exclusivamente para fins de atendimento e entrega do eBook.</p>
-      <p><strong>3. Uso das Informações:</strong> Os dados são utilizados para processar pedidos, oferecer suporte e enviar comunicações relacionadas ao produto.</p>
-      <p><strong>4. Compartilhamento:</strong> Seus dados não são compartilhados com terceiros, exceto com a plataforma Hotmart, responsável pelo processamento do pagamento.</p>
-      <p><strong>5. Segurança:</strong> Adotamos medidas técnicas e administrativas para proteger seus dados pessoais.</p>
-      <p><strong>6. Direitos:</strong> Você pode solicitar acesso, correção ou exclusão dos seus dados a qualquer momento pelo e-mail de contato informado.</p>
-      <p><strong>7. Contato:</strong> Em caso de dúvidas, entre em contato por <a href="mailto:contato@seudominio.com">contato@seudominio.com</a>.</p>
-    </div>
-
-    <footer>© 2025 Seu Nome ou Marca</footer>
-  </div>
+    <footer>© 2025 Seu Nome ou Marca</footer>
+  </div>
 </body>
 </html>
