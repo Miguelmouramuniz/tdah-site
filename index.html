@@ -2,117 +2,181 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sintomas do TDAH - eBook</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16956920282"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-16956920282');
+  </script>
+
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #6a11cb, #2575fc);
-      color: #fff;
+      background: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #f4f4f4;
+      padding: 20px;
       min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 20px;
     }
+
     .container {
-      background: #1e1e2f;
-      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.85);
       border-radius: 20px;
-      max-width: 700px;
+      padding: 30px;
+      max-width: 480px;
       width: 100%;
       text-align: center;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      box-shadow: 0 0 25px rgba(255, 165, 0, 0.3);
     }
+
+    .top-link {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .top-link a {
+      color: #FFA500;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
     h1 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-      color: #ffd700;
+      font-size: 28px;
+      color: #FFA500;
+      margin-bottom: 15px;
     }
+
     img {
-      max-width: 250px;
       width: 100%;
       border-radius: 12px;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 1rem;
-      margin: 10px 0;
-    }
-    .price {
-      font-size: 1.5rem;
-      color: #ffd700;
-      margin: 15px 0;
-    }
-    .buy-btn {
-      background: #ffd700;
-      color: #000;
-      font-weight: bold;
-      padding: 12px 24px;
-      border-radius: 10px;
-      text-decoration: none;
-      display: inline-block;
       margin: 20px 0;
-      transition: background 0.3s;
+      box-shadow: 0 0 12px rgba(255,165,0,0.3);
     }
-    .buy-btn:hover {
-      background: #e6c200;
+
+    p {
+      font-size: 15px;
+      margin-bottom: 12px;
+      line-height: 1.5;
     }
-    .benefits {
-      text-align: left;
-      margin-top: 30px;
+
+    .highlight {
+      color: #FFA500;
+      font-weight: bold;
     }
-    .benefits h2 {
-      color: #ffd700;
-      margin-bottom: 10px;
-      font-size: 1.3rem;
+
+    .price {
+      font-size: 24px;
+      color: #FFA500;
+      margin: 20px 0;
+      font-weight: bold;
     }
-    .privacy-link a {
-      color: #ffd700;
+
+    .discount, .bonus {
+      background-color: #1a202c;
+      padding: 12px;
+      border-radius: 10px;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    .discount {
+      border: 1px solid #f6ad55;
+      color: #fbd38d;
+    }
+
+    .bonus {
+      border: 1px solid #63b3ed;
+      color: #90cdf4;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 30px;
+      background-color: #FFA500;
+      color: #000;
       text-decoration: none;
-      font-size: 0.9rem;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      transition: 0.3s ease;
     }
+
+    .buy-btn:hover {
+      background-color: #ff8800;
+      color: #fff;
+    }
+
     footer {
       margin-top: 30px;
-      font-size: 0.8rem;
-      opacity: 0.7;
+      font-size: 13px;
+      color: #a0aec0;
+    }
+
+    .benefits {
+      background-color: #1a1a1a;
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: left;
+      box-shadow: 0 0 10px rgba(255, 165, 0, 0.2);
+    }
+
+    .benefits h2 {
+      color: #FFA500;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .benefits p {
+      margin-bottom: 12px;
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <div class="top-link">
+      ❓ <a href="como-comprar.html">Alguma dúvida? Clique aqui para saber como comprar</a>
+    </div>
     <h1>Sintomas do TDAH</h1>
     <img src="1000023566.png" alt="Capa do eBook Sintomas do TDAH" />
-
-    <p>Este eBook é <strong>direto ao ponto</strong> e ideal para quem quer entender de forma simples os <strong>sintomas do TDAH</strong>.</p>
+    <p>Este eBook é <span class="highlight">autoexplicativo</span>, direto ao ponto e perfeito para quem quer entender de forma simples e objetiva os <strong>sintomas do TDAH</strong>.</p>
+    <p><strong>Sintoma:</strong> Dificuldade de manter o foco em tarefas simples do dia a dia.</p>
     <div class="price">R$ 26,90</div>
-    <p>🎁 Use o CUPOM <strong>TDS120</strong> para ganhar um desconto!</p>
-    <p>🚀 Compre agora e destaque-se no mercado digital!</p>
+    <div class="discount">🎁 Use o CUPOM <strong>TDS120</strong> para ganhar um super desconto!</div>
+    <div class="bonus">🚀 Comprando agora, você pode até se destacar no mercado de produtos digitais!</div>
 
-    <a class="buy-btn" href="https://pay.hotmart.com/Y99928366E" target="_blank">Compre Agora</a>
+    <!-- Botão Compre Agora no topo -->
+    <a class="buy-btn" href="https://pay.hotmart.com/Y99928366E" target="_blank" rel="noopener noreferrer">Compre Agora</a>
 
     <div class="benefits">
-      <h2>📘 O que você vai aprender:</h2>
-      <p>✅ Como identificar distrações e manter o foco.</p>
-      <p>✅ Estratégias práticas para organizar tarefas.</p>
-      <p>✅ Técnicas para melhorar sua memória.</p>
-      <p>✅ Como vencer a procrastinação.</p>
-      <p>✅ Clareza sobre os sintomas e quando buscar ajuda.</p>
+      <h2>✨ O que este eBook pode resolver:</h2>
+      <p>📌 <strong>Falta de foco constante?</strong><br> Aprenda a identificar padrões de distração e como começar a controlá-los no dia a dia.</p>
+      <p>📌 <strong>Dificuldade para organizar tarefas?</strong><br> Descubra estratégias simples e diretas para melhorar sua produtividade sem precisar de aplicativos complicados.</p>
+      <p>📌 <strong>Esquecimentos frequentes?</strong><br> Entenda como o TDAH afeta sua memória de curto prazo e como você pode treinar seu cérebro para lembrar mais.</p>
+      <p>📌 <strong>Procrastinação que atrapalha sua vida?</strong><br> O eBook mostra como o TDAH influencia sua motivação e como virar esse jogo.</p>
+      <p>📌 <strong>Insegurança sobre o diagnóstico?</strong><br> Você terá clareza sobre os sintomas e saberá quando é hora de buscar ajuda profissional com confiança.</p>
     </div>
 
-    <a class="buy-btn" href="https://pay.hotmart.com/Y99928366E" target="_blank">Adquirir Agora</a>
+    <!-- Botão Compre Agora no final -->
+    <a class="buy-btn" href="https://pay.hotmart.com/Y99928366E" target="_blank" rel="noopener noreferrer">Compre Agora</a>
 
-    <div class="privacy-link">
-      🔒 <a href="politica-de-privacidade.pdf" target="_blank">Política de Privacidade</a>
-    </div>
-
-    <footer>© 2025 Miguel Moura Muniz</footer>
+    <footer>© 2025 Seu Nome ou Marca</footer>
   </div>
 </body>
 </html>
